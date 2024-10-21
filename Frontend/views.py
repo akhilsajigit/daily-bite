@@ -1,15 +1,22 @@
 from django.shortcuts import render
 
+
 # Create your views here.
 
 def index_page(request):
-  return render(request, "index.html")
+    return render(request, "index.html")
+
 
 def menu_page(request):
-  return render(request, "Menu.html")
+    return render(request, "Menu.html")
+
 
 def about_page(request):
-  return render(request, "About.html")
+    return render(request, "About.html")
+
 
 def booking_page(request):
-  return render(request, "Booking.html")
+    return render(request, "Booking.html")
+
+def signup_page(request):
+    return render(request, "SignUp.html")
