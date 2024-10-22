@@ -8,15 +8,18 @@ def index_page(request):
 
 
 def menu_page(request):
-    return render(request, "Menu.html")
+    return render(request, "menu.html")
 
 
 def about_page(request):
-    return render(request, "About.html")
+    return render(request, "about.html")
 
 
 def booking_page(request):
-    return render(request, "Booking.html")
+    return render(request, "booking.html")
 
 def signup_page(request):
-    return render(request, "SignUp.html")
+    return render(request, "signUp.html")
+
+def item_filtered(request):
+    return render(request, "item-filtered.html")

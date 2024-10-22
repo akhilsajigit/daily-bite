@@ -89,6 +89,10 @@ a:focus {
           box-shadow: none;
 }
 
+.view-btn{
+  margin-left: 7em;
+}
+
 /*header section*/
 .hero_area {
   position: relative;
