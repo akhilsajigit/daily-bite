@@ -6,19 +6,18 @@ body{
     align-items: center;
     min-height: 100vh;
     font-family: 'Jost', sans-serif;
-    /* background: linear-gradient(to bottom, #00d4ff , #1a68ad , #001524 ) */
-    /* background: url(static/bg.jpg) ; */
-    background: #fff;
+    background: url(../Images/background.jpg) no-repeat center / cover; 
 }
 
 .container{
     width: 350px;
     height: 500px;
-    background-color: skyblue;
     overflow: hidden;
-    background: url(../Images/car.jpg) no-repeat center / cover; 
+    /* background: url(../Images/container.jpg) no-repeat center / cover;  */
+    background-color: rgba(255, 255, 255, 0.5);
     border-radius: 10px;
     box-shadow: 5px 20px 50px black;
+    color: orangered;
 }
 
 .checkbox{
@@ -32,7 +31,7 @@ body{
 }
 
 label{
-    color: #fff;
+    color: black;
     font-size: 2.3em;
     justify-content: center;
     display: flex;
@@ -61,7 +60,7 @@ button{
     justify-content: center;
     display: block;
     color: #fff;
-    background: #573b8a;
+    background: rgb(54, 54, 54);
     font-size: 1rem;
     font-weight: bold;
     margin-top: 20px;
@@ -72,12 +71,13 @@ button{
 } 
 
 button:hover{
-    background: #3f2968;
+    background: black;
 }
 
 .login{
     height: 460px;
-    background: #fff;
+    /* background: #fff; */
+    background: rgb(254, 188, 65);
     border-radius: 60% / 10%;
     transform: translateY(-180px);
     transition: .8s ease-in-out;
@@ -89,7 +89,7 @@ button:hover{
 }
 
 .login label{
-    color:#573b8a;
+    color:black;
     transform: scale(.6);
 }
 
