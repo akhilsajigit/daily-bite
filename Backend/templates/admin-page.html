@@ -23,6 +23,7 @@
   <link rel="shortcut icon" href="{% static 'images/favicon.png' %}" />
 </head>
 <body>
+  {% block content %}
   <div class="container-scroller">
     <!-- partial:partials/_navbar.html -->
     <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
@@ -405,7 +406,7 @@
             <div class="col-md-12 grid-margin">
               <div class="row">
                 <div class="col-12 col-xl-8 mb-4 mb-xl-0">
-                  <h3 class="font-weight-bold">Welcome Aamir</h3>
+                  <h3 class="font-weight-bold">Akhil</h3>
                   <h6 class="font-weight-normal mb-0">All systems are running smoothly! You have <span class="text-primary">3 unread alerts!</span></h6>
                 </div>
               </div>
@@ -420,6 +421,7 @@
     </div>   
     <!-- page-body-wrapper ends -->
   </div>
+  {% end-block %}
   <!-- container-scroller -->
 
   <!-- plugins:js -->
