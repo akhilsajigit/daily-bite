@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+{% extends 'admin-page.html' %}
+{% block content %}
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="col-lg-6 grid-margin stretch-card">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">View Menu</h4>
+        <p class="card-description">
+        </p>
+        <div class="table-responsive">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>id</th>
+                <th>Name</th>
+                <th>Image</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>53275531</td>
+                <td>
+                  <img src="" alt="">
+                </td>
+                <td>
+                  <button class="badge badge-warning">Edit</button>
+                </td>
+                <td>
+                  <button class="badge badge-danger">Delete</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+{% endblock %}

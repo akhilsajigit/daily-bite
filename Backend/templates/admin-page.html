@@ -23,7 +23,6 @@
   <link rel="shortcut icon" href="{% static 'images/favicon.png' %}" />
 </head>
 <body>
-  {% block content %}
   <div class="container-scroller">
     <!-- partial:partials/_navbar.html -->
     <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
@@ -311,8 +310,8 @@
             </a>
             <div class="collapse" id="ui-basic">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/buttons.html">Add Menu</a></li>
-                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/dropdowns.html">View Menu</a></li>
+                <li class="nav-item"> <a class="nav-link" href="{% url 'add_menu_page' %}">Add Menu</a></li>
+                <li class="nav-item"> <a class="nav-link" href="{% url 'view_menu' %}">View Menu</a></li>
               </ul>
             </div>
           </li>
@@ -324,8 +323,8 @@
             </a>
             <div class="collapse" id="form-elements">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"><a class="nav-link" href="pages/forms/basic_elements.html">Add Items</a></li>
-                <li class="nav-item"><a class="nav-link" href="pages/forms/basic_elements.html">View Items</a></li>
+                <li class="nav-item"><a class="nav-link" href="{% url 'add_items' %}">Add Items</a></li>
+                <li class="nav-item"><a class="nav-link" href="{% url 'view_items' %}">View Items</a></li>
               </ul>
             </div>
           </li>
@@ -399,6 +398,7 @@
           </li>
         </ul>
       </nav>
+      {% block content %}
       <!-- partial -->
       <div class="main-panel">
         <div class="content-wrapper">
@@ -417,11 +417,13 @@
         <!-- partial:partials/_footer.html -->
         <!-- partial -->
       </div>
+
+      {% endblock %}
       <!-- main-panel ends -->
     </div>   
     <!-- page-body-wrapper ends -->
   </div>
-  {% end-block %}
+
   <!-- container-scroller -->
 
   <!-- plugins:js -->
